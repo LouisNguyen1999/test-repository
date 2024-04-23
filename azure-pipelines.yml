@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: "DESKTOP-L8PEL36"
+  name: LenNX-Laptop
+  demands:
+   - agent.name -equals DESKTOP-L8PEL36
 
 steps:
 - script: echo Hello, world!
